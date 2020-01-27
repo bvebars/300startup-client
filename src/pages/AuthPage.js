@@ -12,7 +12,7 @@ export const AuthPage = () => {
     const changeHandler = event => {
         setForm({...form, [event.target.name]: event.target.value})
     };
-
+ 
     const registerHandler = async () => {
         try {
             const data = await request('/user/create', 'POST', {...form});

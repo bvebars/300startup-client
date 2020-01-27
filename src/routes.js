@@ -15,10 +15,10 @@ export const useRoutes = (isAuthenticated) => {
                 <Route path="/create" exact>
                     <CreateProduct/>
                 </Route>
-                <Route path="/product/:id" exact>
+                <Route path="/product/" exact>
                     <Product/>
                 </Route>
-                <Redirect to="/create"/>
+                <Redirect to="/products"/>
             </Switch>
         )
     }
