@@ -5,7 +5,7 @@ import {useHttp} from "../hooks/http.hook";
 import {AuthContext} from "../context/AuthContext";
 
 export const AuthPage = () => {
-    const auth = useContext(AuthContext)
+    const auth = useContext(AuthContext);
     const {loading, error, request} = useHttp();
     const [form, setForm] = useState({email: '', password: ''});
 

@@ -9,17 +9,15 @@ import createStore from './store'
 
 const store = createStore();
 
-setTimeout(function () {
-    store.dispatch({
-        type: 'SET_PRODUCT',
-        payload: [
-            {
-                id: 0,
-                title: 'Hello word'
-            }
-        ]
-    })
-}, 5000);
+// setTimeout(function () {
+//     store.dispatch({
+//         type: 'LOGIN',
+//         payload: {
+//             auth: 'poor'
+//         }
+//     })
+// },2000);
+
 
 ReactDOM.render(
     <Provider store={store}>

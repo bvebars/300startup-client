@@ -1,21 +1,19 @@
 const State = {
-    isLoading: false,
-    products: null
+    auth: null
 };
 
 export default (state = State, action) => {
 
     switch (action.type) {
-        case 'SET_PRODUCT':
+        case 'LOGIN':
             return {
                 ...state,
-                products: action.payload,
-                isLoading: true,
+                auth: 'Выход'
             };
-        case 'SET_IS_READY':
+        case 'LOGOUT':
         return {
           ...state,
-            isLoading: action.payload
+            auth: 'Вход'
         };
         default:
             return state;
